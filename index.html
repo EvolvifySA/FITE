@@ -21,18 +21,28 @@
       <a class="brand" href="#top" aria-label="FITE Consultoria">
         <img src="assets/logo-main.png" alt="FITE Consultoria" />
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span>
-        <span></span>
-      </button>
       <nav class="site-nav" id="site-nav" aria-label="Menu principal">
         <a href="#solucao">Solução</a>
         <a href="#metodo">Método</a>
         <a href="#servicos">Serviços</a>
         <a href="#helmar">Helmar Aquino</a>
-        <a href="#ebook">Ebook</a>
+        <a href="#catalogo">Catálogo</a>
         <a class="nav-cta" href="#contato">Falar com consultor</a>
       </nav>
+      <div class="header-actions">
+        <button class="cart-toggle" id="cartToggle" type="button" aria-label="Carrinho vazio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M3 4h2.2l2.4 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21 8H6.2" />
+            <circle cx="10" cy="20" r="1.4" />
+            <circle cx="17.5" cy="20" r="1.4" />
+          </svg>
+          <span class="cart-toggle__count" id="cartCount" hidden>0</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
@@ -221,25 +231,46 @@
         </div>
       </section>
 
-      <section class="content-hub band-light" id="ebook">
-        <div class="ebook-cover" aria-hidden="true">
-          <span>FITE</span>
-          <strong>Guia prático de ergonomia auditável</strong>
-          <small>AEP, AET, indicadores e gestão de riscos para empresas</small>
+      <section class="catalog band-light" id="catalogo">
+        <div class="catalog-head">
+          <div>
+            <p class="section-kicker">Catálogo FITE</p>
+            <h2>Ebooks, checklists, planilhas e treinamentos de ergonomia auditável.</h2>
+          </div>
+          <div class="catalog-intro">
+            <p>
+              O mesmo método que a FITE aplica em campo, empacotado em material que a sua equipe
+              usa amanhã. Escolha os itens, adicione ao carrinho e finalize com a consultoria.
+            </p>
+            <ul class="check-list">
+              <li>Entrega digital imediata após a confirmação</li>
+              <li>Modelos editáveis, prontos para auditoria</li>
+              <li>Suporte técnico da FITE para aplicar o material</li>
+            </ul>
+          </div>
         </div>
-        <div class="ebook-copy">
-          <p class="section-kicker">Material rico</p>
-          <h2>Ebook sem venda direta, com direcionamento para diagnóstico.</h2>
+
+        <div class="toolbar">
+          <label class="search-field">
+            <span class="sr-only">Buscar material</span>
+            <input type="search" id="produtoSearch" placeholder="Buscar por material, tema ou código..." />
+          </label>
+          <div class="filter-chips" id="filterChips" role="group" aria-label="Filtrar por categoria"></div>
+          <span class="toolbar__count" id="produtoCount" role="status"></span>
+        </div>
+
+        <div class="produtos-grid" id="produtosGrid"></div>
+
+        <div class="load-more-wrap" id="loadMoreWrap" hidden>
+          <button class="button outline" id="loadMoreBtn" type="button">Carregar mais materiais</button>
+        </div>
+
+        <div class="catalog-foot">
           <p>
-            A página prepara o visitante antes do contato: entrega valor, educa sobre riscos ergonômicos
-            e mostra como a FITE organiza evidências para tomada de decisão.
+            Precisa de um material sob medida para a sua operação, com a marca e os postos da sua
+            empresa? A FITE produz versões corporativas dos checklists e painéis.
           </p>
-          <ul class="check-list">
-            <li>Checklist de maturidade ergonômica</li>
-            <li>Diferença entre AEP, AET e gestão contínua</li>
-            <li>Indicadores que ajudam a conversar com diretoria</li>
-          </ul>
-          <a class="button primary" href="#contato">Receber o ebook e falar com a FITE</a>
+          <a class="button primary" href="#contato">Falar com um consultor</a>
         </div>
       </section>
 
@@ -302,6 +333,70 @@
       <p>Fisioterapia do Trabalho Especializada - João Pessoa-PB, Recife-PE e Campina Grande-PB.</p>
     </footer>
 
+    <!-- Detalhe do material -->
+    <div class="modal-overlay" id="modalOverlay" hidden>
+      <div class="modal" id="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal__art" id="modalCoverSlot"></div>
+        <div class="modal__body">
+          <button class="modal__close" id="modalClose" type="button" aria-label="Fechar">×</button>
+          <p class="modal__code" id="modalCode"></p>
+          <h3 class="modal__title" id="modalTitle"></h3>
+          <p class="modal__sub" id="modalSub"></p>
+          <p class="modal__resumo" id="modalResumo"></p>
+          <ul class="check-list" id="modalInclui"></ul>
+          <div class="modal__specs">
+            <div>
+              <span>Formato</span>
+              <strong id="modalFormato"></strong>
+            </div>
+            <div>
+              <span>Nível</span>
+              <strong id="modalNivel"></strong>
+            </div>
+            <div>
+              <span>Entrega</span>
+              <strong id="modalEntrega"></strong>
+            </div>
+          </div>
+          <div class="modal__price" id="modalPrice"></div>
+          <div class="modal__actions">
+            <button class="button primary" id="modalAdd" type="button">Adicionar ao carrinho</button>
+            <a class="button outline" id="modalWa" target="_blank" rel="noopener">Tirar dúvida no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrinho -->
+    <div class="cart-overlay" id="cartOverlay" hidden>
+      <aside class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Carrinho de materiais">
+        <div class="cart-panel__head">
+          <h3>Seu carrinho</h3>
+          <button class="modal__close" id="cartClose" type="button" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div class="cart-panel__list" id="cartList"></div>
+        <div class="cart-panel__empty" id="cartEmpty" hidden>
+          <p>Seu carrinho está vazio.</p>
+          <p>Adicione ebooks, checklists ou planilhas do catálogo para solicitar tudo de uma vez.</p>
+        </div>
+        <div class="cart-panel__foot" id="cartFoot" hidden>
+          <div class="cart-panel__total">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">R$ 0,00</strong>
+          </div>
+          <p class="cart-panel__note">
+            O pedido é fechado com a equipe da FITE pelo WhatsApp, com nota fiscal e acesso enviado por email.
+          </p>
+          <button class="button primary full" id="cartCheckout" type="button">Finalizar pelo WhatsApp</button>
+          <button class="button outline full" id="cartKeep" type="button">Continuar navegando</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
     <script src="script.js"></script>
+    <script src="produtos-data.js"></script>
+    <script src="catalogo.js"></script>
   </body>
 </html>
