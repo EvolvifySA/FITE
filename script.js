@@ -15,24 +15,26 @@ nav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
+document.querySelectorAll("[data-article-filter]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const topic = button.dataset.articleFilter;
+    document.querySelectorAll("[data-article-filter]").forEach((item) => item.classList.toggle("is-active", item === button));
+    document.querySelectorAll(".article-card").forEach((card) => {
+      card.hidden = !(topic === "todos" || card.dataset.topic === topic);
+    });
+  });
+});
+
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
-  const name = data.get("name") || "Olá";
+  const name = data.get("name") || "Ol?";
   const company = data.get("company") || "minha empresa";
   const contact = data.get("contact") || "meu contato";
   const need = data.get("need") || "ergonomia corporativa";
   const message = data.get("message") || "Quero entender o melhor caminho para minha operação.";
-
-  const text = [
-    `Olá, sou ${name}.`,
-    `Empresa: ${company}.`,
-    `Contato: ${contact}.`,
-    `Interesse: ${need}.`,
-    `Contexto: ${message}`,
-  ].join("\n");
-
+  const text = [`Ol?, sou ${name}.`, `Empresa: ${company}.`, `Contato: ${contact}.`, `Interesse: ${need}.`, `Contexto: ${message}`].join("
+");
   navigator.clipboard?.writeText(text);
-  formNote.textContent =
-    "Mensagem preparada e copiada. Agora conecte este formulário ao WhatsApp, CRM ou email oficial da FITE.";
+  formNote.textContent = "Mensagem preparada e copiada. Agora conecte este formul?rio ao WhatsApp, CRM ou email oficial da FITE.";
 });

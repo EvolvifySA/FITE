@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/analise-da-confiabilidade/index.html",
+      "destination": "/analise-da-confiabilidade/",
+      "permanent": true
+    },
+    {
+      "source": "/impacto-da-usabilidade/index.html",
+      "destination": "/impacto-da-usabilidade/",
+      "permanent": true
+    },
+    {
+      "source": "/ergonomia-no-trabalho/index.html",
+      "destination": "/ergonomia-no-trabalho/",
+      "permanent": true
+    },
+    {
+      "source": "/psicossociais/index.html",
+      "destination": "/psicossociais/",
+      "permanent": true
+    },
+    {
+      "source": "/nr-17/index.html",
+      "destination": "/nr-17/",
+      "permanent": true
+    }
+  ]
+}
