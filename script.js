@@ -1,3 +1,13 @@
+// Evita que o navegador restaure a rolagem anterior após uma atualização.
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+window.addEventListener("pageshow", () => {
+  if (!window.location.hash) {
+    window.scrollTo(0, 0);
+  }
+});
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 const form = document.querySelector(".contact-form");
@@ -28,13 +38,12 @@ document.querySelectorAll("[data-article-filter]").forEach((button) => {
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
-  const name = data.get("name") || "Ol?";
+  const name = data.get("name") || "Ola";
   const company = data.get("company") || "minha empresa";
   const contact = data.get("contact") || "meu contato";
   const need = data.get("need") || "ergonomia corporativa";
   const message = data.get("message") || "Quero entender o melhor caminho para minha operação.";
-  const text = [`Ol?, sou ${name}.`, `Empresa: ${company}.`, `Contato: ${contact}.`, `Interesse: ${need}.`, `Contexto: ${message}`].join("
-");
+  const text = [`Ola, sou ${name}.`, `Empresa: ${company}.`, `Contato: ${contact}.`, `Interesse: ${need}.`, `Contexto: ${message}`].join("\n");
   navigator.clipboard?.writeText(text);
-  formNote.textContent = "Mensagem preparada e copiada. Agora conecte este formul?rio ao WhatsApp, CRM ou email oficial da FITE.";
+  formNote.textContent = "Mensagem preparada e copiada. Agora conecte este formulario ao WhatsApp, CRM ou email oficial da FITE.";
 });
