@@ -132,8 +132,8 @@ a {
     linear-gradient(0deg, rgba(21, 21, 21, 0.98) 0%, rgba(21, 21, 21, 0) 24%, rgba(21, 21, 21, 0) 100%),
     url("assets/helmar-laptop.jpg");
   background-repeat: no-repeat;
-  background-position: center, center, 72% 42%;
-  background-size: cover, cover, min(760px, 62vw) auto;
+  background-position: center, center, right center;
+  background-size: cover, cover, contain;
   opacity: 0.9;
 }
 
