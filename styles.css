@@ -127,10 +127,13 @@ a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("assets/helmar-laptop.jpg");
+  background-image:
+    linear-gradient(90deg, rgba(21, 21, 21, 0.9) 0%, rgba(21, 21, 21, 0) 24%, rgba(21, 21, 21, 0) 74%, rgba(21, 21, 21, 0.96) 100%),
+    linear-gradient(0deg, rgba(21, 21, 21, 0.98) 0%, rgba(21, 21, 21, 0) 24%, rgba(21, 21, 21, 0) 100%),
+    url("assets/helmar-laptop.jpg");
   background-repeat: no-repeat;
-  background-position: 72% 42%;
-  background-size: min(760px, 62vw) auto;
+  background-position: center, center, 72% 42%;
+  background-size: cover, cover, min(760px, 62vw) auto;
   opacity: 0.9;
 }
 
@@ -495,7 +498,6 @@ section {
   gap: 1px;
   max-width: var(--max);
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.14);
 }
 
 .service-grid article {
@@ -1056,6 +1058,7 @@ section {
     width: 100%;
     height: clamp(320px, 62vw, 520px);
     margin-top: 30px;
+    background-image: url("assets/helmar-laptop.jpg");
     background-position: 54% 18%;
     background-size: cover;
     border-radius: 4px;
