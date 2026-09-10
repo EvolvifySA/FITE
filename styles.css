@@ -204,6 +204,12 @@ h1 {
   display: inline;
 }
 
+.h1-line--nowrap {
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
 .h1-line + .h1-line::before {
   content: " ";
 }
@@ -1218,6 +1224,12 @@ section {
 
   .h1-line {
     display: block;
+  }
+
+  .h1-line--nowrap {
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   .h1-line + .h1-line::before {
