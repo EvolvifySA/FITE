@@ -26,6 +26,11 @@
       "source": "/nr-17/index.html",
       "destination": "/nr-17/",
       "permanent": true
+    },
+    {
+      "source": "/ebooks/:path*",
+      "destination": "/produtos/",
+      "permanent": true
     }
   ]
 }
