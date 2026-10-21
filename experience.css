@@ -4,7 +4,7 @@
 .module-layout { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
 .module-layout--reverse .module-media { order:2; }
 .module-media { min-width:0; }
-.module-media>img { width:100%; height:410px; object-fit:cover; border-radius:36px; }
+.module-media>img { display:block; width:auto; max-width:100%; height:auto; max-height:600px; margin:0 auto; border-radius:36px; }
 .module-copy h2 { font-size:32px; max-width:560px; }
 .module-copy>p:not(.section-kicker) { color:#526378; font-size:17px; }
 .module-copy .section-kicker { max-width:100%; }
@@ -77,5 +77,13 @@
 .reference-dialog[open],.lead-dialog[open] { animation:dialog-enter .24s ease-out; }
 @keyframes dialog-enter { from { opacity:0; transform:translateY(12px) scale(.98); } to { opacity:1; transform:none; } }
 @media(max-width:1000px) { .module-layout { gap:35px; } .contact-shell { grid-template-columns:1fr; } .contact-story { padding:32px; display:block; } .contact-story img { display:none; } .contact-expectations { grid-template-columns:repeat(3,1fr); margin-bottom:0; } }
-@media(max-width:760px) { .corporate .solution-module { padding:50px 0; } .module-layout,.corporate.catalog-page .inner-hero__grid { grid-template-columns:1fr; } .module-layout--reverse .module-media { order:0; } .module-media>img { height:290px; border-radius:24px; } .module-copy h2 { font-size:27px; } .module-editorial { min-height:280px; padding:30px; } .module-editorial strong { font-size:32px; } .corporate #quoteForm { padding:26px 22px; grid-template-columns:1fr; } .corporate #quoteForm .full { grid-column:1/-1; } .contact-shell { border-radius:26px; } .contact-expectations { grid-template-columns:1fr; gap:12px; } .corporate .contact-story h2 { font-size:28px; } .corporate.catalog-page .inner-hero__grid>img { height:360px; } .credential-grid { grid-template-columns:1fr; } .credential-grid article { padding:25px; } .corporate .events-disclosure summary { padding:22px; } .corporate .events-disclosure .event-proof { padding:5px 20px 25px; } }
+@media(max-width:760px) { .corporate .solution-module { padding:50px 0; } .module-layout,.corporate.catalog-page .inner-hero__grid { grid-template-columns:1fr; } .module-layout--reverse .module-media { order:0; } .module-media>img { max-height:480px; border-radius:24px; } .module-copy h2 { font-size:27px; } .module-editorial { min-height:280px; padding:30px; } .module-editorial strong { font-size:32px; } .corporate #quoteForm { padding:26px 22px; grid-template-columns:1fr; } .corporate #quoteForm .full { grid-column:1/-1; } .contact-shell { border-radius:26px; } .contact-expectations { grid-template-columns:1fr; gap:12px; } .corporate .contact-story h2 { font-size:28px; } .corporate.catalog-page .inner-hero__grid>img { height:360px; } .credential-grid { grid-template-columns:1fr; } .credential-grid article { padding:25px; } .corporate .events-disclosure summary { padding:22px; } .corporate .events-disclosure .event-proof { padding:5px 20px 25px; } }
+.whatsapp-float { position:fixed; right:24px; bottom:24px; z-index:60; width:62px; height:62px; display:grid; place-items:center; color:#fff; background:#25d366; border-radius:50%; box-shadow:0 8px 24px #25d36666; animation:whatsapp-bounce 2.4s ease-in-out infinite; transition:transform .2s; }
+.whatsapp-float svg { width:34px; height:34px; }
+.whatsapp-float::before,.whatsapp-float::after { content:''; position:absolute; inset:0; border-radius:50%; border:2px solid #25d366; animation:whatsapp-pulse 2.4s ease-out infinite; pointer-events:none; }
+.whatsapp-float::after { animation-delay:1.2s; }
+.whatsapp-float:hover,.whatsapp-float:focus-visible { transform:scale(1.08); animation-play-state:paused; }
+@keyframes whatsapp-pulse { 0% { transform:scale(1); opacity:.8; } 100% { transform:scale(1.7); opacity:0; } }
+@keyframes whatsapp-bounce { 0%,70%,100% { transform:translateY(0); } 80% { transform:translateY(-8px); } 90% { transform:translateY(0); } 95% { transform:translateY(-3px); } }
+@media(max-width:760px) { .whatsapp-float { right:16px; bottom:16px; width:56px; height:56px; } .whatsapp-float svg { width:30px; height:30px; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } }

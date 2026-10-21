@@ -133,6 +133,7 @@
 .corporate .inner-hero { padding:60px 0; background:#f3f3f3; }
 .inner-hero__grid { display:grid; grid-template-columns:1.1fr 1fr; gap:70px; align-items:center; }
 .corporate .inner-hero h1 { font-size:40px; line-height:1.18; max-width:640px; }
+.inner-hero__grid--solo { grid-template-columns:1fr; }
 .inner-hero__grid>img { width:100%; height:360px; object-fit:cover; object-position:center 30%; border-radius:16px 70px 16px 16px; }
 .inner-hero__grid>div>p:not(.section-kicker) { max-width:540px; font-size:18px; }
 .editorial-gallery,.home-event-photos { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
