@@ -21,7 +21,7 @@ Referências de organização (apenas para layout, sem vínculo de marca): https
 - `produtos/index.html`: catálogo único de produtos e ebooks, incluindo materiais de apoio e mentoria. O botão abre diretamente o WhatsApp com “Tenho interesse nesse produto”, nome e valor; não exige formulário. O número oficial ainda precisa ser configurado. Retrato exibido integralmente, sem corte.
 - `trabalhe-conosco/index.html`: nome, cargo, função, região, e-mail, WhatsApp, área de interesse, experiência e currículo anexado, enviados somente por e-mail (FormSubmit).
 - Formulário “Vamos montar sua proposta?” (home): enviado somente por e-mail, com e-mail/WhatsApp do cliente e cupom opcional.
-- Novas soluções “Quick massage” e “Riscos psicossociais e NR-1” (10 cards, 4 por linha, última linha centralizada). A página de quick massage usa uma foto de alongamento em grupo; trocar por uma foto de quick massage quando houver.
+- Novas soluções “Quick massage” e “Riscos psicossociais e NR-1” (10 cards, 4 por linha, última linha centralizada). Fotos novas (geradas por IA, enviadas pelo cliente) em `assets/fotos/`: capa da home, foto “Sobre”, ginástica laboral, quick massage e NR-1. As fotos com placas de carro saíram do site.
 - Botão flutuante do WhatsApp (canto inferior direito, em `experience.js`) em todas as páginas, com o número oficial (83) 99104-6450. Por isso os formulários de proposta e currículo vão só por e-mail.
 - LinkedIn (https://www.linkedin.com/company/fite-consultoria/) no rodapé de todas as páginas.
 - Home reorganizada a partir do HTML e CSS públicos da BeeCorp: abertura compacta, botões arredondados, diferenciais, desafios, soluções em quatro colunas e blocos de conteúdo.

@@ -174,7 +174,7 @@
 .corporate .corp-hero .corp-actions { gap:12px; margin-top:30px; }
 .corporate .corp-hero .button { padding-inline:22px; }
 .corporate .corp-hero__photo { align-self:center; height:440px; margin:10px 0 50px 22px; min-height:0; }
-.corporate .corp-hero__photo>img { border-radius:110px 16px 110px 16px; object-position:50% 45%; }
+.corporate .corp-hero__photo>img { border-radius:110px 16px 110px 16px; object-position:45% 50%; }
 .corporate .corp-hero__photo figcaption { left:-22px; bottom:-22px; right:auto; padding:18px 23px; display:flex; align-items:center; gap:16px; border:0; border-radius:14px; box-shadow:0 12px 36px #15293a18; font-size:14px; }
 .corporate .corp-hero__photo figcaption strong { font-size:16px; margin-bottom:4px; }
 .corporate .corp-hero__photo figcaption img { width:36px; height:36px; object-fit:contain; }
