@@ -87,3 +87,4 @@
 @keyframes whatsapp-bounce { 0%,70%,100% { transform:translateY(0); } 80% { transform:translateY(-8px); } 90% { transform:translateY(0); } 95% { transform:translateY(-3px); } }
 @media(max-width:760px) { .whatsapp-float { right:16px; bottom:16px; width:56px; height:56px; } .whatsapp-float svg { width:30px; height:30px; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } }
+

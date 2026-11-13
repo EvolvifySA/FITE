@@ -26,7 +26,7 @@ window.FITE_PRODUTOS = [
     destaque: true,
     title: "Guia prático de ergonomia auditável",
     subtitle: "AEP, AET, indicadores e gestão de riscos para empresas",
-    price: 0,
+    price: 55,
     formato: "PDF - 68 páginas",
     nivel: "Introdutório",
     resumo:
@@ -44,8 +44,7 @@ window.FITE_PRODUTOS = [
     tone: 2,
     title: "AEP e AET na prática",
     subtitle: "Do levantamento de campo ao relatório que a auditoria aceita",
-    price: 97,
-    oldPrice: 147,
+    price: 55,
     formato: "PDF - 124 páginas",
     nivel: "Intermediário",
     resumo:
@@ -63,7 +62,7 @@ window.FITE_PRODUTOS = [
     tone: 3,
     title: "Indicadores de ergonomia para a diretoria",
     subtitle: "Traduzindo risco ergonômico em linguagem de negócio",
-    price: 127,
+    price: 55,
     formato: "PDF - 96 páginas",
     nivel: "Avançado",
     resumo:
@@ -81,7 +80,7 @@ window.FITE_PRODUTOS = [
     tone: 4,
     title: "Exoesqueletos na Indústria 4.0",
     subtitle: "Protocolo de avaliação, implementação e acompanhamento",
-    price: 197,
+    price: 55,
     formato: "PDF - 88 páginas",
     nivel: "Avançado",
     resumo:
@@ -99,7 +98,7 @@ window.FITE_PRODUTOS = [
     tone: 5,
     title: "Checklist de maturidade ergonômica",
     subtitle: "52 pontos de verificação em 5 dimensões",
-    price: 47,
+    price: 55,
     formato: "PDF editável - 14 páginas",
     nivel: "Introdutório",
     resumo:
@@ -117,7 +116,7 @@ window.FITE_PRODUTOS = [
     tone: 1,
     title: "Checklist de conformidade NR-17 e NR-36",
     subtitle: "Requisito por requisito, com a evidência esperada",
-    price: 67,
+    price: 55,
     formato: "PDF editável - 22 páginas",
     nivel: "Intermediário",
     resumo:
@@ -135,7 +134,7 @@ window.FITE_PRODUTOS = [
     tone: 2,
     title: "Checklist de posto administrativo",
     subtitle: "Home office e escritório corporativo",
-    price: 47,
+    price: 55,
     formato: "PDF editável - 12 páginas",
     nivel: "Introdutório",
     resumo:
@@ -153,8 +152,7 @@ window.FITE_PRODUTOS = [
     tone: 3,
     title: "Matriz de risco ergonômico",
     subtitle: "Priorização automática por severidade e exposição",
-    price: 147,
-    oldPrice: 197,
+    price: 55,
     formato: "Excel - fórmulas liberadas",
     nivel: "Intermediário",
     resumo:
@@ -172,7 +170,7 @@ window.FITE_PRODUTOS = [
     tone: 4,
     title: "Plano de ação ergonômico",
     subtitle: "Do achado técnico ao acompanhamento com prazo",
-    price: 97,
+    price: 55,
     formato: "Excel - fórmulas liberadas",
     nivel: "Intermediário",
     resumo:
@@ -190,7 +188,7 @@ window.FITE_PRODUTOS = [
     tone: 5,
     title: "Painel de absenteísmo e queixas",
     subtitle: "Série histórica de afastamentos por setor",
-    price: 127,
+    price: 55,
     formato: "Excel - fórmulas liberadas",
     nivel: "Avançado",
     resumo:
@@ -209,8 +207,7 @@ window.FITE_PRODUTOS = [
     destaque: true,
     title: "Ergonomia de Alta Performance",
     subtitle: "Curso gravado - 8 módulos com estudos de caso reais",
-    price: 897,
-    oldPrice: 1190,
+    price: 55,
     formato: "Vídeo - 11h + material de apoio",
     nivel: "Avançado",
     resumo:
@@ -228,7 +225,7 @@ window.FITE_PRODUTOS = [
     tone: 3,
     title: "Mentoria em saúde do trabalhador",
     subtitle: "Acompanhamento individual - 6 encontros",
-    price: 2490,
+    price: 55,
     formato: "Online ao vivo - 6 sessões de 1h",
     nivel: "Profissional",
     resumo:

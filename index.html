@@ -114,6 +114,11 @@
 <h3>Qualidade de vida no trabalho</h3>
 <p>Programas de prevenção e cuidado conectados às necessidades dos colaboradores.</p><a href="solucoes/qualidade-de-vida/index.html">Saiba mais ↗</a>
 </article>
+<article class="solution-card"><svg class="service-icon" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="23" cy="8" r="4.5"/>
+<path d="M12 21c3-4 7-6 11-6s8 2 11 6M15 30h16l3 11M31 30l-3 11M18 21l-3 9M28 21l3 9M6 41h34"/></svg>
+<h3>Quick massage</h3>
+<p>Massagem rápida na cadeira, no próprio ambiente de trabalho, para aliviar tensões durante a rotina.</p><a href="solucoes/quick-massage/index.html">Saiba mais ↗</a>
+</article>
 <article class="solution-card"><svg class="service-icon" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="34" height="26" rx="2"/>
 <path d="M23 30v11M14 41l9-7 9 7M14 20l7-6 5 4 7-7"/></svg>
 <h3>Palestras, SIPAT e eventos</h3>
@@ -139,6 +144,12 @@
 <path d="M23 11C17 5 8 5 3 7v29c7-2 14-1 20 5 6-6 13-7 20-5V7c-5-2-14-2-20 4Zm0 0v30"/></svg>
 <h3>Mentoria profissional</h3>
 <p>Desenvolvimento técnico e visão consultiva para profissionais de saúde do trabalhador.</p><a href="solucoes/mentoria/index.html">Saiba mais ↗</a>
+</article>
+<article class="solution-card"><svg class="service-icon" viewBox="0 0 46 46" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M14 42V32c-4-3-7-8-7-13C7 10 14 4 23 4s16 6 16 15l4 7-4 1v5c0 2-1 3-3 3h-5v7"/>
+<path d="M23 25s-6-4-6-8a3 3 0 0 1 6-1 3 3 0 0 1 6 1c0 4-6 8-6 8Z"/></svg>
+<h3>Riscos psicossociais e NR-1</h3>
+<p>Programa de gestão e coordenação dos riscos psicossociais relacionados ao trabalho, conforme a NR-1.</p><a href="solucoes/riscos-psicossociais/index.html">Saiba mais ↗</a>
 </article>
 </div>
 <div class="section-cta">
@@ -350,11 +361,13 @@
 <label><input type="checkbox" name="services" value="AEP / AET"><span>AEP / AET</span></label>
 <label><input type="checkbox" name="services" value="Ginástica laboral"><span>Ginástica laboral</span></label>
 <label><input type="checkbox" name="services" value="Qualidade de vida no trabalho"><span>Qualidade de vida no trabalho</span></label>
+<label><input type="checkbox" name="services" value="Quick massage"><span>Quick massage</span></label>
 <label><input type="checkbox" name="services" value="Palestras, SIPAT e eventos"><span>Palestras, SIPAT e eventos</span></label>
 <label><input type="checkbox" name="services" value="Gestão de riscos ergonômicos"><span>Gestão de riscos ergonômicos</span></label>
 <label><input type="checkbox" name="services" value="Inclusão e retorno ao trabalho"><span>Inclusão e retorno ao trabalho</span></label>
 <label><input type="checkbox" name="services" value="Exoesqueletos e inovação"><span>Exoesqueletos e inovação</span></label>
 <label><input type="checkbox" name="services" value="Mentoria profissional"><span>Mentoria profissional</span></label>
+<label><input type="checkbox" name="services" value="Riscos psicossociais (NR-1)"><span>Riscos psicossociais (NR-1)</span></label>
 </fieldset>
 <div class="form-step-title">02. Sobre você e sua empresa</div>
 <label>Nome<input name="name" autocomplete="name" required maxlength="120" placeholder="Seu nome"></label>
@@ -362,8 +375,10 @@
 <label>Função / área de atuação<input name="function" required maxlength="160" placeholder="Ex.: gestão de pessoas, ergonomia"></label>
 <label>Empresa<input name="company" autocomplete="organization" required maxlength="160" placeholder="Empresa ou autônomo"></label>
 <label>Cidade / estado<input name="region" required maxlength="120" placeholder="Ex.: João Pessoa / PB"></label>
-
-<label class="full">Conte um pouco do seu projeto<textarea name="message" rows="3" maxlength="2000" placeholder="Número de colaboradores, formato de atendimento e principal necessidade"></textarea></label><button class="button primary full" type="submit">Conversar pelo WhatsApp ↗</button>
+<label>E-mail<input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="seu@email.com"></label>
+<label>WhatsApp (opcional)<input name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="(83) 99999-9999"></label>
+<label>Cupom de desconto (opcional)<input name="coupon" maxlength="40" autocapitalize="characters" placeholder="Comprou um ebook? Informe o cupom"></label>
+<label class="full">Conte um pouco do seu projeto<textarea name="message" rows="3" maxlength="2000" placeholder="Número de colaboradores, formato de atendimento e principal necessidade"></textarea></label><p class="form-help">Sua solicitação é enviada por e-mail à equipe da FITE, que responde no e-mail informado.</p><button class="button primary full" type="submit">Enviar solicitação ↗</button>
 <p class="form-note" role="status"></p>
 </form>
 </div>
@@ -376,6 +391,7 @@
 </div>
 <nav aria-label="Menu do rodapé"><a href="index.html#sobre">A FITE</a><a href="index.html#helmar">Helmar Aquino</a><a href="artigos/index.html">Artigos</a><a href="produtos/index.html">Produtos e ebooks</a><a href="index.html#regioes">Onde atuamos</a><a href="trabalhe-conosco/index.html">Trabalhe conosco</a>
 <a href="https://www.instagram.com/fite_consultoria/" target="_blank" rel="noopener" aria-label="Instagram da FITE: @fite_consultoria">@fite_consultoria ↗</a>
+<a href="https://www.linkedin.com/company/fite-consultoria/" target="_blank" rel="noopener" aria-label="LinkedIn da FITE Consultoria">LinkedIn ↗</a>
 </nav>
 </div>
 </footer><dialog class="lead-dialog" id="leadDialog" aria-labelledby="leadTitle">

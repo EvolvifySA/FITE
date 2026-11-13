@@ -26,22 +26,24 @@
 </div>
 </section>
 <section class="corp-section wrap" id="candidatura">
-<div class="split">
+<div class="split split--top">
 <div>
 <p class="section-kicker">Apresente-se à FITE</p>
 <h2>Conte o que você faz<br>e onde quer atuar.</h2>
-<p>Preencha seu perfil para iniciar uma conversa com a equipe. No WhatsApp, você poderá compartilhar seu currículo e consultar oportunidades.</p><img class="careers-photo" src="laboral/IMG_2856.jpeg" alt="Profissional conduzindo exercícios para uma equipe no ambiente de trabalho" loading="lazy" width="1920" height="1280">
+<p>Preencha seu perfil para iniciar uma conversa com a equipe. Anexe seu currículo: ele chega por e-mail à equipe da FITE.</p><img class="careers-photo" src="laboral/IMG_2856.jpeg" alt="Profissional conduzindo exercícios para uma equipe no ambiente de trabalho" loading="lazy" width="1920" height="1280">
 </div>
-<form id="careersForm" class="contact-form" aria-label="Apresentar perfil profissional">
+<form id="careersForm" class="contact-form" aria-label="Apresentar perfil profissional" enctype="multipart/form-data">
 <label>Nome<input name="name" required autocomplete="name" maxlength="120" placeholder="Seu nome completo"></label>
 <label>Cargo / profissão<input name="role" required maxlength="120" placeholder="Ex.: fisioterapeuta"></label>
 <label>Função / área de atuação<input name="function" required maxlength="160" placeholder="Ex.: gestão de pessoas, ergonomia"></label>
 <label>Cidade / estado<input name="region" required maxlength="120" placeholder="Ex.: Recife / PE"></label>
 <label>Empresa atual (opcional)<input name="company" autocomplete="organization" maxlength="160" placeholder="Empresa ou autônomo"></label>
-<label>Contato<input name="contact" required maxlength="160" placeholder="Seu email ou WhatsApp"></label>
-<label class="full">Área de interesse<select name="interest" required><option value="">Selecione uma área</option><option>Ginástica laboral</option><option>Ergonomia</option><option>Fisioterapia do trabalho</option><option>Palestras e treinamentos</option><option>Administrativo / comercial</option><option>Outra área</option></select></label>
+<label>E-mail<input name="email" type="email" required autocomplete="email" maxlength="160" placeholder="seu@email.com"></label>
+<label>WhatsApp<input name="phone" type="tel" required autocomplete="tel" maxlength="40" placeholder="(83) 99999-9999"></label>
+<label>Área de interesse<select name="interest" required><option value="">Selecione uma área</option><option>Ginástica laboral</option><option>Ergonomia</option><option>Fisioterapia do trabalho</option><option>Quick massage</option><option>Riscos psicossociais (NR-1)</option><option>Palestras e treinamentos</option><option>Administrativo / comercial</option><option>Outra área</option></select></label>
 <label class="full">Sua experiência<textarea name="experience" rows="4" required maxlength="2000" placeholder="Conte sobre sua atuação e disponibilidade"></textarea></label>
-<p class="form-help">A mensagem será preparada com seus dados. Revise e envie no WhatsApp para continuar.</p><button type="submit" class="button primary full">Continuar no WhatsApp ↗</button>
+<label class="full file-field">Currículo (PDF, DOC ou DOCX, até 5 MB)<span class="file-picker"><span class="file-picker__button" aria-hidden="true">Escolher arquivo</span><span class="file-picker__name" data-file-name>Nenhum arquivo selecionado</span></span><input name="attachment" type="file" required accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+<p class="form-help">Seu perfil e currículo são enviados por e-mail à equipe da FITE.</p><button type="submit" class="button primary full">Enviar currículo ↗</button>
 <p class="form-note" role="status"></p>
 </form>
 </div>
@@ -54,6 +56,7 @@
 </div>
 <nav aria-label="Menu do rodapé"><a href="index.html#sobre">A FITE</a><a href="index.html#helmar">Helmar Aquino</a><a href="artigos/index.html">Artigos</a><a href="produtos/index.html">Produtos e ebooks</a><a href="index.html#regioes">Onde atuamos</a><a href="trabalhe-conosco/index.html">Trabalhe conosco</a>
 <a href="https://www.instagram.com/fite_consultoria/" target="_blank" rel="noopener" aria-label="Instagram da FITE: @fite_consultoria">@fite_consultoria ↗</a>
+<a href="https://www.linkedin.com/company/fite-consultoria/" target="_blank" rel="noopener" aria-label="LinkedIn da FITE Consultoria">LinkedIn ↗</a>
 </nav>
 </div>
 </footer><script src="site-config.js"></script><script src="corporate.js"></script><script src="experience.js"></script></body></html>
